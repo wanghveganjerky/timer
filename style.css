@@ -1,0 +1,111 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap'); */
+
+*{
+  /* font-family: 'Manrope', sans-serif; */
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32"><circle cx="8" cy="8" r="7" fill="black"/></svg>') 6 6, auto;
+}
+
+body {
+  /* background-color: white; */
+  /* padding: 0; */
+  text-align: center;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased; 
+  border: 0px solid black; 
+  width: calc(100% - 22px); /* Subtract the total of left and right margins and borders */
+  height: calc(100% - 22px); /
+}
+
+#timer {
+  position: relative;
+
+  font-size: 25em; /* Adjust size as needed */
+}
+
+
+
+h1{
+  font-size: 3em;
+  line-height: 1.7;
+  color:white;
+}
+
+h2{
+  font-size: 1.2em; 
+  color:#000000;
+}
+
+h3{
+  font-size: 1.3em; 
+  line-height: 0.1; 
+  color:#000000;
+}
+
+p{
+  color:#0000FF;
+  font-family: Inconsolata,monospace;
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none; 
+  color:  #01EA00; 
+}
+
+a:hover {
+  color:  #0000ff; 
+}
+
+/* CSS for Night Mode */
+.night-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Ensure all text elements inside night-mode class are white */
+.night-mode, .night-mode * {
+  color: white !important; /* The !important rule is used to override other styles */
+}
+
+.night-mode #searchEngineBarInput {
+  background-color: #00ff00;
+}
+
+::-webkit-scrollbar{
+  width: 42px;
+}
+
+::-webkit-scrollbar-track{
+  background-color:white;
+}
+
+::-webkit-scrollbar-thumb{
+  box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
+  background:linear-gradient(to right, yellow 3%, #00f000 70%);
+  border-radius:50vh;
+  display:inline-block;
+  /* padding:1.2vh 1.2vh; */
+  text-decoration:none;
+}
+
+::selection {
+  color: #F7F7F4;
+  background-color: #00f000;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 9px;
+    align-items: flex-end;
+  }
+
+  #searchEngineContainer {
+    top: 70vh; 
+  }
+  
+}
+
+
