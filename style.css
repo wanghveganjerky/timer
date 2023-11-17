@@ -20,9 +20,11 @@ body {
 }
 
 #timer {
-  position: relative;
-
   font-size: 25em; /* Adjust size as needed */
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
